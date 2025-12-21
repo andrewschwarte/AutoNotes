@@ -6,11 +6,10 @@ import servicesRouter from "./routes/services.js";
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// CORS - Allow both local and production origins
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://autonotes.onrender.com", // ← You'll update this with your actual frontend URL later
+  "https://autonotes-1.onrender.com",
 ];
 
 app.use(
