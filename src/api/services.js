@@ -1,4 +1,8 @@
-const API_URL = "http://localhost:4000/api";
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.MODE === "production"
+    ? "https://autonotes-api.onrender.com/api"
+    : "http://localhost:4000/api");
 
 // Vehicle API calls
 export async function getVehicles() {
