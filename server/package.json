@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
